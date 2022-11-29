@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="proses.php" method="post">
+        <fieldset>
+            <legend>Formulir Pendaftaran Mahasiswa</legend>
+            <p>
+            <label for="nama">Nama</label>
+            <input type="text" name="nama" id="nama" required autocomplete minlength="">
+            </p>
+            <p>
+            <label for="tanggal">Tanggal Lahir</label>
+            <input type="date" id="tanggal" name="tanggal">
+            </p>
+            <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+            <label for="alamat">Alamat</label>
+            <textarea name="alamat" id="alamat" cols="30" rows="5"></textarea>
+            </p>
+            <p>
+            <label for="no">No Telepon</label>
+            <input type="tel" id="no" name="no" required>
+            </p>
+            <p>
+            <label for="gender">Jenis Kelamin</label>
+            <input type="radio" name="gender" value="laki-laki" checked>Laki-laki
+            <input type="radio" name="gender" value="perempuan">Perempuan
+            </p>
+            <p>
+            <label for="hobby">Hobby</label>
+            <input type="checkbox" name="hobby_1" value="membaca">Membaca
+            <input type="checkbox" name="hobby_1" value="membaca">Olahraga
+            <input type="checkbox" name="hobby_1" value="membaca">Bermain Game
+            <input type="checkbox" name="hobby_1" value="membaca">Ngoding
+            </p>
+            <p>
+            <label>Agama :</label>
+            <select name="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="buddha">Buddha</option>
+                <option value="shinto">Shinto</option>
+                <option value="konghucu">Konghucu</option>
+                <option value="atheis">Atheis</option>
+            </select>
+            </p>
+            <p>
+            <input type="submit" value="Kirim">
+            <input type="reset" value="Reset"> 
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
